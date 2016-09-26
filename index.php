@@ -171,7 +171,7 @@ input[type=datetime-local]{
 			$ch = curl_init();
 			// login
 			curl_setopt($ch, CURLOPT_POST, 1);
-			curl_setopt($ch, CURLOPT_URL, "http://api.shadowtv.net/reperio/login");
+			curl_setopt($ch, CURLOPT_URL, "https://api.shadowtv.net/reperio/login");
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 			$data = array("username" => "shadowtv", "password" => "630ninth");
 			$data_string = json_encode($data);
@@ -248,7 +248,7 @@ input[type=datetime-local]{
 			
 			while(duration1 > 0){
 				//add url to list
-				url = "http://api.shadowtv.net/reperio/v1/captions/"+channels[channel]+"/"+year1+"-"+month1+"-"+(day1).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+"T"+(hour1).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+":"+minute1+":00.000Z/"+Math.min(3599, parseInt(duration1))+"?include=captions,body";
+				url = "https://api.shadowtv.net/reperio/v1/captions/"+channels[channel]+"/"+year1+"-"+month1+"-"+(day1).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+"T"+(hour1).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+":"+minute1+":00.000Z/"+Math.min(3599, parseInt(duration1))+"?include=captions,body";
 				urls.push(url);
 				
 				//increment hour (increments hours and days, but fails when going between months)(this is a bug) 
@@ -386,7 +386,7 @@ input[type=datetime-local]{
 			.attr("transform", function(d) {
 				return "translate(500, 10)";
 				})
-			.on('click', function(){window.open('http://www.shadowtv.com');})
+			.on('click', function(){window.open('https://www.shadowtv.com');})
 			.text(function(d) { return d.text; });	
 		//add cloud:
 		d3.select("#cloud_div").append("svg")
