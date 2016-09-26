@@ -1,6 +1,3 @@
-# Tagcloud
-TagCloud maker using shadowtv api
-
 Tag Cloud User Guide
 Created by Cameron Abma
 Currently located at http://192.168.168.110:8001/tagcloud.php
