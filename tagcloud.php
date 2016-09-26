@@ -84,7 +84,7 @@ input[type=datetime-local]{
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 <script src="./jquery-3.1.1.min.js"></script>
-<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="./d3/d3.js"></script>
 <script src="./d3.layout.cloud.js"></script>
 <script type="text/javascript" src="html2canvas.js"></script>
@@ -142,10 +142,10 @@ input[type=datetime-local]{
 				<input id="stop_words" name="stop_words" type="text" value="" ><br><br>				
 		
 			Colors :<br>
-				<input type="radio" name="color_radio" class="color_radio" value=1 checked><img class="color" src="colors_1.png"></img>
-				<input type="radio" name="color_radio" class="color_radio" value=2><img class="color" src="colors_2.png"></img>
-				<input type="radio" name="color_radio" class="color_radio" value=3><img class="color" src="colors_3.png" ></img>
-				<input type="radio" name="color_radio" class="color_radio" value=4><img class="color" src="colors_4.png" ></img>
+				<input type="radio" name="color_radio" class="color_radio" value=1 checked><img class="color" src="colors_1.png">
+				<input type="radio" name="color_radio" class="color_radio" value=2><img class="color" src="colors_2.png">
+				<input type="radio" name="color_radio" class="color_radio" value=3><img class="color" src="colors_3.png" >
+				<input type="radio" name="color_radio" class="color_radio" value=4><img class="color" src="colors_4.png" >
 		</div>
 		<br>
 		<input type="button" id="submit" value="Submit" onclick="startFunc()">
@@ -159,7 +159,7 @@ input[type=datetime-local]{
 </div>
 <div id="surrounding_div">
 	<div id="cloud_div">
-	<img id="loading_gif" src="loading.gif" style="display:none"></img>
+	<img id="loading_gif" src="loading.gif" style="display:none">
 	</div>
 </div>
 <div id="img-out" hidden>
@@ -512,7 +512,7 @@ input[type=datetime-local]{
 	var advanced_settings_clicked = function(){
 		/*expands or retracts the advanced settings div */
 		//expand
-		if($( "#advanced_settings_button" ).css("background-color") == "rgb(221, 221, 221)"){
+		if($( "#advanced_settings_button" ).css("background-color") != "rgb(102, 102, 102)"){
 			$( "#advanced_settings_button" ).css("background-color", "#666");
 			$( "#advanced_settings_button" ).css("color", "white");
 			$( "#advanced_settings_button" ).css("box-shadow", "-1px 1px lightgrey");

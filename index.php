@@ -512,7 +512,7 @@ input[type=datetime-local]{
 	var advanced_settings_clicked = function(){
 		/*expands or retracts the advanced settings div */
 		//expand
-		if($( "#advanced_settings_button" ).css("background-color") == "rgb(221, 221, 221)"){
+		if($( "#advanced_settings_button" ).css("background-color") != "rgb(102, 102, 102)"){
 			$( "#advanced_settings_button" ).css("background-color", "#666");
 			$( "#advanced_settings_button" ).css("color", "white");
 			$( "#advanced_settings_button" ).css("box-shadow", "-1px 1px lightgrey");
