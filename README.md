@@ -1,9 +1,9 @@
 # Tagcloud
-TagCloud maker using shadowtv api
+TagCloud test project interacting with the shadowtv api
 
 Tag Cloud User Guide
 Created by Cameron Abma
-Currently located at http://192.168.168.110:8001/tagcloud.php
+Currently not live
 
 How to Use/General Info:
 - The form should mostly be self explanatory but basically fill out the specific channels, start time, and duration to create your desired tag cloud.
